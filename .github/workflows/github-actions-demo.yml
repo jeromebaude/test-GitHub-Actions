@@ -3,6 +3,7 @@ on: [workflow_dispatch]
 jobs:
     build:
         # ...
+        runs-on: ubuntu-latest
         steps:
             - name: Scan container images for vulnerabitilies using Lacework
               uses: timarenz/lw-scanner-action:v0.0.1
